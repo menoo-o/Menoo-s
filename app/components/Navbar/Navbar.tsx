@@ -1,7 +1,6 @@
 'use client'
-
+import styles from './Navbar.module.css';
 import { useState } from 'react';
-import styles from './navbar.module.css';
 import Link from 'next/link';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
