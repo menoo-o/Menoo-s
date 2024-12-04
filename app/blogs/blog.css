@@ -1,0 +1,102 @@
+/* General container */
+.blog-container {
+    padding: 50px;
+    text-align: center;
+    background-color: #f0f0f0;
+
+  }
+  
+  /* Title */
+  .blog-title {
+    font-size: 5rem;  /* Large font size */
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtitle */
+  .blog-subtitle {
+    font-size: 3.5rem;  /* Slightly smaller than the title */
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  /* Regular text */
+  .blog-text {
+    font-size: 2rem;  /* Bigger text for sarcasm effect */
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  /* Bold Text */
+  .bold-text {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Footer */
+  .blog-footer {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 30px;
+    font-style: italic;
+  }
+  
+  /* Mobile/Tablet Responsiveness */
+  @media (max-width: 768px) {
+    .blog-title {
+      font-size: 4rem;  /* Slightly smaller font for mobile/tablet */
+    }
+  
+    .blog-subtitle {
+      font-size: 3rem;
+    }
+  
+    .blog-text {
+      font-size: 2rem;  /* Smaller font for readability */
+    }
+  
+    .blog-footer {
+      font-size: 1.8rem;
+    }
+  
+    .blog-container {
+      padding: 20px;  /* Reduce padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Title */
+    .blog-title {
+      font-size: 3rem;  /* Smaller font for very small screens */
+    }
+  
+    /* Subtitle */
+    .blog-subtitle {
+      font-size: 2.5rem;  /* Reduce font size for better fit */
+    }
+  
+    /* Regular text */
+    .blog-text {
+      font-size: 1.8rem;  /* Smaller text to ensure it's readable on small screens */
+    }
+  
+    /* Bold Text */
+    .bold-text {
+      font-weight: bold;
+      color: #444;
+    }
+  
+    /* Footer */
+    .blog-footer {
+      font-size: 1.5rem;  /* Smaller font size for footer */
+    }
+  
+    /* General container padding */
+    .blog-container {
+      padding: 15px;  /* Reduced padding for smaller screens */
+    }
+  }
+  
