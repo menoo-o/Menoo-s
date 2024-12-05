@@ -48,3 +48,15 @@
     }
   }
   
+
+  
+.icon {
+  width: 40px; /* Adjust the size */
+  height: 40px; /* Adjust the size */
+  fill: currentColor; /* This will allow the icon to inherit the color of its parent */
+  transition: transform 0.3s ease; /* Optional: add hover effect */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Optional: scale the icon on hover */
+}

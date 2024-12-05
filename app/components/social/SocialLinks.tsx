@@ -1,8 +1,6 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faReddit } from '@fortawesome/free-brands-svg-icons';
 import styles from './SocialLinks.module.css';
-
+import Image from 'next/image';
 
 export default function SocialLinks() {
   return (
@@ -12,23 +10,30 @@ export default function SocialLinks() {
     
         <Link href="https://github.com/menoo-o" rel="noopener noreferrer" className={styles.socialLink}  target='_blank' >
           
-            <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+        <Image
+          src="/github.svg"  // Path to your local SVG file
+          alt="GitHub"
+          width={30} // You can adjust the size of the SVG
+          height={30}
+          className={styles.icon}
+        />
 
         </Link>
 
    
         <Link href="https://x.com/Thisismeeno" rel="noopener noreferrer" className={styles.socialLink}  target='_blank'>
-          
-            <FontAwesomeIcon icon={faTwitter} className={styles.icon} />
+              
+            <Image
+              src="/twitter.svg"  // Path to your local SVG file
+              alt="GitHub"
+              width={30} // You can adjust the size of the SVG
+              height={30}
+              className={styles.icon}
+            />
 
         </Link>
 
      
-        <Link href="https://www.reddit.com/u/menoo_027" rel="noopener noreferrer" className={styles.socialLink}  target='_blank'>
-          
-            <FontAwesomeIcon icon={faReddit} className={styles.icon} />
-
-        </Link>
 
       </div>
     </div>
