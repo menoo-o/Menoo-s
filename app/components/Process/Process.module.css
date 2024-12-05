@@ -1,0 +1,126 @@
+/* Main container for the process section */
+.processSection {
+    margin-top: 5rem;
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #fdf9ee;
+    overflow-x: auto; /* Enable horizontal scroll */
+  }
+  
+  /* Container for the content (image + text) */
+  .processContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ensure everything stays on one line */
+    width: 100%;
+  }
+  
+  /* Image wrapper (keep it fixed width) */
+  .imageWrapper {
+    flex: 1;
+    margin-right: 2rem;
+  }
+  
+  /* Image styles */
+  .image {
+    width: 100%;
+    height: 560px !important;
+    border-radius: 10px;
+    object-fit: contain; /* Keep the image aspect ratio */
+  }
+  
+  /* Text wrapper */
+  .textWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Each phase description */
+  .phase {
+    margin-bottom: 2rem;
+  }
+  
+  /* Title styling for each phase */
+  .stepTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Description text styling */
+  .stepDescription {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Tablet/Smaller Screens */
+  @media (max-width: 768px) {
+    .processContent {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .imageWrapper {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  
+    .textWrapper {
+      align-items: center;
+    }
+  
+    .stepTitle {
+      font-size: 1.8rem;
+    }
+  
+    .stepDescription {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Mobile Screens */
+  @media (max-width: 480px) {
+    .stepTitle {
+      font-size: 1.5rem;
+    }
+  
+    .stepDescription {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+  /* Heading Styling */
+.processHeading {
+    font-size: 2.5rem;   /* Font size for the heading */
+    font-weight: bold;   /* Make the heading bold */
+     /* Center the heading */
+    color: #333;         /* Set a dark color for the heading */
+    margin-bottom: 2rem; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    letter-spacing: 2px;  /* Slight letter spacing for a clean look */
+  }
+  
+  /* Adjust heading size for smaller devices */
+  @media (max-width: 768px) {
+    .processHeading {
+      font-size: 2rem;   /* Slightly smaller on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .processHeading {
+      font-size: 1.6rem;  /* Even smaller on mobile */
+    }
+  }
+  

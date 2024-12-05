@@ -1,0 +1,58 @@
+/* Entire Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 91vh; /* Full screen */
+    background-color: #121212; /* Dark background */
+    color: #e5e5e5; /* Light gray text */
+    padding: 0 2rem; /* Ensure padding for mobile */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Main Title */
+  .mainTitle {
+    font-size: 10.8vw; /* Large responsive font size */
+    font-weight: 900; /* Extra-bold font */
+    line-height: 1.1; /* Reduce space between lines */
+    text-transform: uppercase;
+    color: #8e8e8e; /* Light grayish tone */
+  }
+  
+  .mainTitle span {
+    color: #ffffff; /* White text for <DEV> */
+  }
+  
+  /* Description Section */
+  .description {
+    margin-top: 1rem;
+    font-size: 1.2rem; /* Standard size for readability */
+    color: #b5b5b5; /* Subtle text color */
+    max-width: 600px; /* Limit the width of the text block */
+  }
+  
+  /* Scroll Indicator */
+  .scrollIndicator {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    animation: scrollAnim 1.5s infinite; /* Subtle scroll animation */
+  }
+  
+  /* Scroll Animation */
+  @keyframes scrollAnim {
+    0% {
+      opacity: 0.5;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 0.5;
+      transform: translateY(0);
+    }
+  }
+  

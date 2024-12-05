@@ -14,9 +14,11 @@ export default function Navbar() {
       setIsOpen(false);
     };
 
+    const heading = '<Mobeen.dev />'
+
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>MyPortfolio</div>
+      <div className={styles.logo}> {heading}</div>
       <ul className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
         <li><Link href='/' onClick={closeMenu} >Home</Link></li>
         <li><Link href='/projects'onClick={closeMenu} >Projects</Link></li>

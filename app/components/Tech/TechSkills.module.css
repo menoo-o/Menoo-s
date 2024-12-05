@@ -1,0 +1,107 @@
+/* Container for the tech skills section */
+.techSkillsSection {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Heading style for tech skills */
+  .techSkillsHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Styling for the list of skills */
+  .skillsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+  
+  /* Styling for each skill card */
+  .skillCard {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #3f3831;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skillCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+  
+  .cardContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .skillName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 50%;
+    z-index: 2; /* Ensures text stays on top */
+    transition: opacity 0.3s ease;
+  }
+  
+  .skillImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .skillCard:hover .skillName {
+    opacity: 0;
+  }
+  
+  .skillCard:hover .skillImage {
+    opacity: 1;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .techSkillsHeading {
+      font-size: 2rem;
+    }
+  
+    .skillsList {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  
+    .skillCard {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .techSkillsHeading {
+      font-size: 1.6rem;
+    }
+  
+    .skillCard {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
