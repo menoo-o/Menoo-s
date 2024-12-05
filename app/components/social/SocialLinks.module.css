@@ -1,0 +1,50 @@
+/* Container for the social links section */
+.socialLinksContainer {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #3f3b3b;
+  }
+  
+  /* Heading style */
+  .heading {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    display: none;
+  }
+  
+  /* Style for the container that holds all social links */
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Individual link styling */
+  .socialLink {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 3rem; /* Adjust size of the icons */
+    color: #c7c1a0;
+    padding: 10px 20px;
+  }
+  
+  /* Hover effects for icons */
+  .socialLink:hover {
+    transform: translateY(-3px); /* Slight lift effect */
+    color: #c7c1a0; /* Change color on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .socialLinks {
+      gap: 1rem;
+    }
+  
+    .socialLink {
+      font-size: 1.8rem; /* Smaller icon size on smaller screens */
+    }
+  }
+  
