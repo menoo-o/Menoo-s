@@ -9,7 +9,7 @@ export default function Hero() {
           <span>{"<DEV>"}</span> | DESIGN
         </h1>
         <p className={styles.description}>
-          ABOUT I am a developer focused on creating interactive digital experiences on the web, working with brands and industry leaders to achieve this.
+        I’m a developer by day, a code wizard by night, and a part-time creative sorcerer with a knack for design. I’m passionate about building meaningful, interactive digital experiences and constantly pushing my boundaries to grow, learn, and emerge stronger.
         </p>
         <div className={styles.scrollIndicator}>Scroll down ↓</div>
       </div>

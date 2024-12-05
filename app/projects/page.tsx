@@ -1,5 +1,6 @@
 import styles from './Projects.module.css';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
+import LogoShowcase from '../components/logo/LogoShowcase';
 
 const projects = [
     {
@@ -53,7 +54,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className={styles.projectsPage}>
+    <>
+      <div className={styles.projectsPage}>
       <header className={styles.hero}>
         <h1>My Projects</h1>
         <p>Explore some of the projects I've worked on.</p>
@@ -65,5 +67,9 @@ export default function Projects() {
         ))}
       </section>
     </div>
+
+    <LogoShowcase />
+    </>
+    
   );
 }

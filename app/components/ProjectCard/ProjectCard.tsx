@@ -6,11 +6,6 @@ export default function ProjectCard({ project }) {
 
   return (
     <div className={styles.card}>
-      {/* Grid of images */}
-      <div className={styles.imageGrid}>
-        
-      </div>
-
       {/* Project details */}
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
