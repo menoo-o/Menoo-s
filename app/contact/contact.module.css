@@ -31,6 +31,7 @@
     font-size: 1rem;
     margin-bottom: 0.5rem;
     color: #555;
+    
   }
   
   .formGroup input, .formGroup textarea {
@@ -38,12 +39,14 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
+    font-family: inherit;
     outline: none;
   }
   
   .formGroup input:focus, .formGroup textarea:focus {
-    border-color: #00c4cc;
-    box-shadow: 0 0 5px rgba(0, 196, 204, 0.5);
+    border-color: #515555;
+    font-family: inherit;
+    box-shadow: 0 0 5px rgba(44, 56, 56, 0.5);
   }
   
   .formGroup textarea {
@@ -51,8 +54,9 @@
   }
   
   .submitButton {
+    font-family: inherit;
     padding: 0.8rem 1.2rem;
-    background-color: #00c4cc;
+    background-color: #3c4041;
     color: #fff;
     font-size: 1rem;
     border: none;
@@ -62,7 +66,7 @@
   }
   
   .submitButton:hover {
-    background-color: #009da6;
+    background-color: #020202;
   }
   
   /* Responsive Design */

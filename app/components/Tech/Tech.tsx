@@ -13,7 +13,6 @@ export default function TechSkills() {
     { name: 'MongodB', imageUrl: '/mongo.png' },
     { name: 'Canva', imageUrl: '/canva.webp' },
     { name: 'Figma', imageUrl: '/figma.png' },
-    { name: 'Adobe Photoshop', imageUrl: '/adob.webp' },
   ];
 
   return (
