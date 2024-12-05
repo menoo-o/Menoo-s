@@ -45,8 +45,13 @@
   .links a {
     display: inline-block;
     margin: 0.5rem;
-    color: #0070f3;
+    color: #afafaf;
     text-decoration: none;
+  }
+
+  .links a:hover{
+    color: #2b2a2a;
+    font-weight: bold;
   }
   
 
