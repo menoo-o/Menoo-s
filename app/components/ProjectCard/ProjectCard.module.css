@@ -12,11 +12,6 @@
     transform: translateY(-5px);
   }
   
-  .image {
-    width: 100%;
-    height: 425px;
-    object-fit: cover;
-  }
   
   .title {
     font-size: 1.2rem;
@@ -72,27 +67,6 @@
     background: #f0f0f0; /* Optional: Placeholder background color */
   }
   
-  .image {
-    object-fit: cover; /* Cover the container */
-  }
+
   
 
-  @media (max-width: 480px){
-
-    .image {
-      height: 120px;
-    }
-
-  }
-
-
-  @media (max-width: 900px){
-
-    .card{
-      height: 450px;
-    }
-    .image {
-      height: 150px;
-    }
-
-  }
